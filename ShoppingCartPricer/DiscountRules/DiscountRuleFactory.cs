@@ -6,8 +6,9 @@ namespace ShoppingCartPricer.DiscountRules
     {
         public static ISet<IDiscountRule> CreateAllDiscountRules()
         {
-            return new HashSet<IDiscountRule>(new[] {
-                new BuyTwoGetOneFreeDiscountRule()
+            return new HashSet<IDiscountRule>(new IDiscountRule[] {
+                new BuyTwoGetOneFreeDiscountRule(),
+                new TenPercentOffInDecemberDiscountRule()
             });
         }
     }

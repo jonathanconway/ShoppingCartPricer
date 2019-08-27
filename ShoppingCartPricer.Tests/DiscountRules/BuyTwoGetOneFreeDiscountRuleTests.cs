@@ -15,7 +15,7 @@ namespace ShoppingCartPricer.Tests.DiscountRules
 
             var discount = testRule.CalculateDiscount(basketEntries);
 
-            Assert.AreEqual(0, discount);
+            Assert.AreEqual(0M, discount);
         }
 
         [TestMethod]
@@ -29,7 +29,7 @@ namespace ShoppingCartPricer.Tests.DiscountRules
 
             var discount = testRule.CalculateDiscount(basketEntries);
 
-            Assert.AreEqual(0, discount);
+            Assert.AreEqual(0M, discount);
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace ShoppingCartPricer.Tests.DiscountRules
 
             var discount = testRule.CalculateDiscount(basketEntries);
 
-            Assert.AreEqual(1, discount);
+            Assert.AreEqual(1M, discount);
         }
 
         [TestMethod]
@@ -56,7 +56,7 @@ namespace ShoppingCartPricer.Tests.DiscountRules
 
             var discount = testRule.CalculateDiscount(basketEntries);
 
-            Assert.AreEqual(3, discount);
+            Assert.AreEqual(3M, discount);
         }
     }
 }
